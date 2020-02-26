@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <div id="multiplication-table">
+        <!-- insert multiplication here -->
+    </div>
+    <script>
+        const createMultiplicationTable = (firstNumber, lastNumber) => {
+            let multipliedNumbersArray = [];
+            
+            for (let i = firstNumber; i < lastNumber + 1; i++) {
+                for (let j = firstNumber; j < lastNumber + 1; j++) {
+                    multipliedNums = [];
+                    multipliedNums = [i] * [j];
+                    
+                    if (j === lastNumber) {
+                        // if the index is less th
+                        multipliedNumbersArray.push(multipliedNums, "\n");
+                    } else {
+                        multipliedNumbersArray.push(multipliedNums);
+                    }
+
+                }
+            }
+
+            return multipliedNumbersArray; 
+        }
+
+        console.log(createMultiplicationTable(1, 12));
+    </script>
+
+</body>
+</html>
