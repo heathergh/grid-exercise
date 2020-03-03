@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Multiplication Table</title>
 </head>
 <body>
-    <div id="multiplication-table">
-        <!-- insert multiplication here -->
-    </div>
+    <header>
+        <h1>Create a Multiplication Table</h1>
+        <p>Enter the number of rows and the highest number to be multiplied in the inputs below. Press the "Generate Multiplication Table" button, and the multiplication table with appear.</p>
+    </header>
+    <main>
+        <form action="">
+            <div class="number">
+                <label for="rows">The number of rows in the multiplication table</label>
+                <input type="text" id="rows">
+            </div>
 
-    <script>
-        const createTwoDimensionalArray = (numberOfArrays, highestNumber) => {
-            let multipliedNumbersArrays = [];
-            
-            for (let i = 0; i < numberOfArrays; i++) {
-                multipliedNumbersArrays[i] = [];
-
-                for (let j = 0; j < highestNumber; j++) {
-                    multipliedNumbersArrays[i][j] = [i + 1] * [j + 1]
-
-                }
-            }
-
-            return multipliedNumbersArrays;
-        }
-
-        createTwoDimensionalArray(10, 10);
-
-    </script>
+            <div class="number">
+                <label for="highest-number">The highest number in the multiplication table</label>
+                <input type="text" id="highest-number">
+            </div>
+            <button type="submit">Generate Multiplication Table</button>
+        </form>
+        <section>
+            <div class="table" id="multiplication-table">
+                <!-- insert multiplication table here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
