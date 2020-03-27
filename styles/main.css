@@ -6,12 +6,27 @@ header {
     padding: 20px 50px;
 }
 
+button {
+    border-style: none;
+    height: 50px;
+    padding: 10px 15px;
+    width: 275px;
+}
+
+label {
+    margin: 0 0 20px 0;
+}
+
 form {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 80%;
+    margin: 20px 0 50px 0;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
 }
 
 .table {
@@ -33,7 +48,7 @@ form {
 .cell {
     border-bottom: 2px solid #000;
     border-left: 2px solid #000;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
-    width: 20px;
+    width: 15px;
 } 

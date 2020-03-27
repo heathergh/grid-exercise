@@ -12,19 +12,21 @@
         <p>Enter the number of rows and the highest number to be multiplied in the inputs below. Press the "Generate Multiplication Table" button, and the multiplication table with appear.</p>
     </header>
     <main>
-        <form action="">
-            <div class="number">
-                <label for="rows">The number of rows in the multiplication table</label>
-                <input type="text" id="rows">
-            </div>
-
-            <div class="number">
-                <label for="highest-number">The highest number in the multiplication table</label>
-                <input type="text" id="highest-number">
-            </div>
-            <button type="submit">Generate Multiplication Table</button>
-        </form>
         <section>
+            <form action="">
+                <div class="number">
+                    <label for="rows">The number of rows in the multiplication table</label>
+                    <input type="text" id="rows">
+                </div>
+    
+                <div class="number">
+                    <label for="highest-number">The highest number in the multiplication table</label>
+                    <input type="text" id="highest-number">
+                </div>
+                <button type="submit">Generate Multiplication Table</button>
+            </form>
+        </section>
+        <section class="table-container">
             <div class="table" id="multiplication-table">
                 <!-- insert multiplication table here -->
             </div>
