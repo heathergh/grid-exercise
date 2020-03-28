@@ -17,6 +17,10 @@ label {
     margin: 0 0 20px 0;
 }
 
+main {
+    margin-bottom: 50px;
+}
+
 form {
     align-items: center;
     display: flex;
@@ -52,3 +56,11 @@ form {
     text-align: center;
     width: 15px;
 } 
+
+
+@media only screen and (min-width: 767px) {
+    .cell {
+        padding: 15px;
+        width: 30px;
+    }
+}
